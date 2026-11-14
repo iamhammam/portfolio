@@ -1,219 +1,121 @@
-<!DOCTYPE html>
-<html lang="en" class="loading">
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Hammam Malabeh – Software Engineer</title>
-<meta name="description" content="Hammam Malabeh – Software Engineer and Full-Stack Developer based in Amman, Jordan.">
-<meta property="og:title" content="Hammam Malabeh – Software Engineer">
-<meta property="og:image" content="https://imhammam.github.io/portfolio/images/hero-cutout.webp">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230c1620'/%3E%3Ctext x='50' y='66' font-size='46' font-weight='900' text-anchor='middle' fill='%23d9566f' font-family='Arial'%3EHM%3C/text%3E%3C/svg%3E">
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<title>Hammam Malabeh — Software Engineer | Amman, Jordan</title>
+<meta name="description" content="Hammam Malabeh — Software Engineer and Full-Stack Developer in Amman, Jordan. ASP.NET Core, Flutter, Python. Projects, certificates and contact.">
+<meta name="author" content="Hammam Malabeh">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="google-site-verification" content="QI-hMPIwQ1Ooydpq8WCjjzKtv2wqmTC-oLl2ddqKaw8">
+<link rel="canonical" href="https://imhammam.github.io/portfolio/">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Hammam Malabeh">
+<meta property="og:title" content="Hammam Malabeh — Software Engineer | Amman, Jordan">
+<meta property="og:description" content="Software Engineer and Full-Stack Developer. ASP.NET Core, Flutter, Python. Projects, certificates and contact.">
+<meta property="og:url" content="https://imhammam.github.io/portfolio/"><meta property="og:image" content="https://imhammam.github.io/portfolio/assets/icons/og-image.png"><meta property="og:image:alt" content="Hammam Malabeh — Software Engineer">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://imhammam.github.io/portfolio/assets/icons/og-image.png">
+<meta name="theme-color" content="#070B14">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icons/favicon-48.png" type="image/png" sizes="48x48">
+<link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://imhammam.github.io/portfolio/#site","name":"Hammam Malabeh","url":"https://imhammam.github.io/portfolio/","inLanguage":"en"},
+{"@type":"Person","@id":"https://imhammam.github.io/portfolio/#person","name":"Hammam Malabeh","alternateName":["Hammam Al-Malabeh","Hammam Abdalhalim Al-Malabeh"],"jobTitle":"Software Engineer","url":"https://imhammam.github.io/portfolio/","image":"https://imhammam.github.io/portfolio/assets/icons/og-image.png","email":"mailto:hmalabeh14@gmail.com","address":{"@type":"PostalAddress","addressLocality":"Amman","addressCountry":"JO"},"alumniOf":{"@type":"CollegeOrUniversity","name":"Zarqa University"},"knowsAbout":["Software Engineering","ASP.NET Core","C#","Flutter","Python","Data Analysis","Clean Architecture"],"sameAs":["https://github.com/Imhammam","https://linkedin.com/in/iamhammam"]}]}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-<noscript><style>.loader{display:none}html.loading{overflow:auto}</style></noscript>
-<meta name="google-site-verification" content="QI-hMPIwQ1Ooydpq8WCjjzKtv2wqmTC-oLl2ddqKaw8" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js" defer></script>
+<script src="script.js" defer></script>
 </head>
-<body>
-<div class="loader" aria-hidden="true">
-  <svg class="lg" viewBox="0 0 100 100"><rect x="1" y="1" width="98" height="98" rx="20" fill="#0c1620" stroke="#d9566f" stroke-opacity=".35" stroke-width="2"/><text x="50" y="66" font-size="46" font-weight="900" text-anchor="middle" fill="#d9566f" font-family="Arial,sans-serif">HM</text></svg>
-  <div class="lbar"><i></i></div>
-</div>
-<nav class="nav"><b>HM</b><div><a href="#about">About</a><a href="#work">Work</a><a href="#contact">Contact</a></div></nav>
+<body class="is-loading" data-nav="dark">
+<div class="boot" role="status"><pre id="bootlog"></pre><span class="boot__n">0%</span></div>
 
-<header class="hero" id="top">
-  <div class="nw"><h1 class="name"><span class="line">Hammam</span><span class="line">Malabeh</span></h1></div>
-  <div class="mw"><img class="me" src="images/hammam_remove.png" alt="Hammam Malabeh"></div>
-  <div class="hud"><div><b>Software Engineer</b>Full-Stack · Data</div><span>Amman, Jordan · 2026</span></div>
+<header class="nav">
+  <a class="logo" href="#top">HM<i></i></a>
+  <nav aria-label="Primary"><a href="#about">About</a><a href="#work">Work</a><a href="#stack">Stack</a><a href="#contact">Contact</a></nav>
+  <span class="live"><i></i>Open to full-time</span>
 </header>
 
-<div class="marq"><div class="row"><span>C#</span><span>ASP.NET Core</span><span>Flutter</span><span>Firebase</span><span>Python</span><span>SQL Server</span><span>Power BI</span></div><div class="row"><span>Clean Architecture</span><span>REST APIs</span><span>Figma</span><span>Entity Framework</span><span>Git</span><span>Agile</span></div></div>
+<main>
+  <section class="hero" id="top" data-theme="dark">
+    <h1 class="name" aria-label="Hammam Malabeh"><span><b class="a">Hammam</b></span> <span><b class="b">Malabeh</b></span></h1>
+    <p class="sr">Hammam Malabeh is a Software Engineer and Full-Stack Developer based in Amman, Jordan. He builds web applications with ASP.NET Core and mobile apps with Flutter, and works with Python and Power BI for data.</p>
+    <div class="face" id="face">
+      <img id="faceImg" src="assets/images/hammam_remove.png" data-alt="https://imhammam.github.io/portfolio/images/hammam_remove.png" alt="Hammam Malabeh">
+      <canvas id="bin" aria-hidden="true"></canvas>
+    </div>
+    <p class="meta meta--l">Software Engineer<br>Full-Stack · Data</p>
+    <p class="meta meta--r">Amman, Jordan<br>2026</p>
+    <p class="hint" id="hint">Hover the face · Click to lock</p>
+  </section>
 
-<section class="about" id="about">
-  <div class="eyebrow rv">About</div>
-  <p>Software Engineering graduate focused on building scalable web applications and intuitive mobile experiences. I specialize in robust back-end architectures with .NET Core and cross-platform apps with Flutter, turning complex business logic into clean, efficient, user-centric code.</p>
-  <div class="stats">
-    <div class="rv"><b data-count="8" data-suf="th">8th</b><span>National rank, Build with AI Hackathon</span></div>
-    <div class="rv"><b data-count="2">2</b><span>Internships</span></div>
-    <div class="rv"><b data-count="3">3</b><span>Featured projects</span></div>
-    <div class="rv"><b data-count="8">8</b><span>Certificates</span></div>
+  <div class="ticker" aria-hidden="true"><div class="ticker__t">
+    <span>C#</span><span>ASP.NET Core</span><span>Flutter</span><span>Firebase</span><span>Python</span><span>SQL Server</span><span>Power BI</span><span>Clean Architecture</span><span>REST APIs</span>
+    <span>C#</span><span>ASP.NET Core</span><span>Flutter</span><span>Firebase</span><span>Python</span><span>SQL Server</span><span>Power BI</span><span>Clean Architecture</span><span>REST APIs</span>
+  </div></div>
+
+  <section class="about" id="about" data-theme="light">
+    <p class="tag">( About )</p>
+    <p class="statement" id="statement">Software Engineering graduate focused on building scalable web applications and intuitive mobile experiences. Turning complex business logic into clean, efficient, user-centric code.</p>
+    <div class="stats">
+      <p data-r><b data-count="8" data-pre="" data-suf="th">0</b>National rank, Build with AI Hackathon</p>
+      <p data-r><b data-count="2">0</b>Internships</p>
+      <p data-r><b data-count="3">0</b>Featured projects</p>
+      <p data-r><b data-count="8">0</b>Certificates</p>
+    </div>
+  </section>
+
+  <section class="work" id="work" data-theme="dark">
+    <div class="work__head"><h2>Things I’ve built</h2><p class="tag">( 03 projects )</p></div>
+    <div class="track">
+      <article class="card"><div class="card__img"><img src="assets/images/Roadk.jpeg" data-alt="https://imhammam.github.io/portfolio/images/IMG_5649.jpeg" alt="RoadK app screens" loading="lazy" decoding="async"></div><div class="card__body"><span class="tag">01</span><h3>RoadK</h3><p>A dual-role full-stack mobile app for citizens and municipal admins to report road issues in real time, with push notifications and a gamified leaderboard.</p><small>Flutter · Dart · Firebase · Figma</small></div></article>
+      <article class="card"><div class="card__img"><img src="assets/images/eshara.png" data-alt="https://imhammam.github.io/portfolio/images/Eshara.png" alt="Eshara sign language project" loading="lazy" decoding="async"></div><div class="card__body"><span class="tag">02</span><h3>Eshara</h3><p>An AI-powered sign language translation system that reached 8th national ranking in the Build with AI Hackathon, later rebuilt with ASP.NET MVC.</p><small>Python · AI · ASP.NET MVC</small></div></article>
+      <article class="card"><div class="card__img"><img src="assets/images/vacation.jpg" data-alt="https://imhammam.github.io/portfolio/images/vacation_project.jpg" alt="Vacation workflow system" loading="lazy" decoding="async"></div><div class="card__body"><span class="tag">03</span><h3>Vacation Workflow</h3><p>A production-level system that automates multi-step leave approval, built with ASP.NET Core and Entity Framework Core on clean architecture.</p><small>ASP.NET Core · EF Core · SQL Server</small></div></article>
+    </div>
+    <div class="work__bar"><i></i></div>
+  </section>
+
+  <section class="stack" id="stack" data-theme="accent">
+    <a class="row" target="_blank" rel="noopener"><h2>Back-end</h2><p>C# · ASP.NET Core · Entity Framework Core · SQL Server · REST APIs · Clean Architecture</p></a>
+    <a class="row" target="_blank" rel="noopener"><h2>Mobile</h2><p>Flutter · Dart · Firebase · Figma · Cross-platform UI</p></a>
+    <a class="row" target="_blank" rel="noopener"><h2>Data</h2><p>Python · Pandas · NumPy · Power BI · SQL · Data analysis</p></a>
+  </section>
+
+  <section class="hall" data-theme="light">
+    <div class="work__head"><h2>Hall of<br>fame</h2><p class="tag">( Qualifications )</p></div>
+    <ul>
+      <li data-r data-cert="assets/certificates/University certificate_7037_page-0001.jpg"><span class="tag">01</span><h3>B.Sc. Software Engineering</h3><p>Zarqa University</p></li>
+      <li data-r data-cert="assets/certificates/Sky_Software.jpg"><span class="tag">02</span><h3>Back-End Engineering Intern</h3><p>Sky Software</p></li>
+      <li data-r data-cert="assets/certificates/Parachute16.PNG"><span class="tag">03</span><h3>Data Analysis Intern</h3><p>Parachute 16</p></li>
+      <li data-r data-cert="assets/certificates/BuildWithAI.PNG"><span class="tag">04</span><h3>Build with AI Hackathon</h3><p>National 8th Ranking</p></li>
+      <li data-r data-cert="assets/certificates/TheHope.PNG"><span class="tag">05</span><h3>ASP.NET Core Advanced</h3><p>The Hope International Company</p></li>
+      <li data-r data-cert="assets/certificates/Mafraq_Hackathon.png"><span class="tag">06</span><h3>Mafraq Hackathon</h3><p>AFAQ</p></li>
+      <li data-r data-cert="assets/certificates/EndPoint.PNG"><span class="tag">07</span><h3>Endpoint Security</h3><p>Cisco</p></li>
+      <li data-r data-cert="assets/certificates/Hammam Abdalhalim Al-Malabeh - Data Analysis_2225_page-0001.jpg"><span class="tag">08</span><h3>Digital Employability Program</h3><p>Youth Grow Activity (YGA) · Data Analysis</p></li>
+    </ul>
+  </section>
+
+  <section class="contact" id="contact" data-theme="dark">
+    <p class="tag">( Contact )</p>
+    <h2><span class="line"><span>Let’s work</span></span><span class="line"><span class="o">together</span></span></h2>
+    <p class="lead">Available for full-time opportunities and relevant projects.</p>
+    <a class="mail" href="mailto:hmalabeh14@gmail.com">hmalabeh14@gmail.com</a>
+    <nav class="social" aria-label="Social"><a href="https://linkedin.com/in/iamhammam" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Imhammam" target="_blank" rel="noopener">GitHub</a><a href="https://imhammam.github.io/portfolio/docs/Hammam%20Al-MalabehCV.pdf" target="_blank" rel="noopener">Resume</a></nav>
+    <footer><span>Hammam Malabeh © 2026 · Amman, Jordan</span><a href="#top">Back to top ↑</a></footer>
+  </section>
+</main>
+<div class="cert" id="cert" hidden role="dialog" aria-modal="true" aria-label="Certificate viewer">
+  <div class="cert__bg" data-close></div>
+  <div class="cert__sheet">
+    <header><span class="tag" id="certN">01 / 08</span><div><a class="btn-s" id="certOpen" target="_blank" rel="noopener" hidden>Open original ↗</a><button class="btn-s" id="certPrev" type="button" aria-label="Previous">←</button><button class="btn-s" id="certNext" type="button" aria-label="Next">→</button><button class="btn-s" id="certClose" type="button" aria-label="Close">✕</button></div></header>
+    <div class="cert__body" id="certBody"></div>
   </div>
-</section>
-
-<section>
-  <div class="eyebrow rv">Qualifications</div><h2 class="rv">Qualified to help.</h2>
-  <div class="grid">
-    <div class="spot rv" data-img="images/University certificate_7037_page-0001.jpg"><h3>B.Sc. Software Engineering</h3><p>Zarqa University</p><small>View certificate</small></div>
-    <div class="spot rv" data-img="images/Sky_Software.jpg"><h3>Back-End Engineering Intern</h3><p>Sky Software</p><small>View certificate</small></div>
-    <div class="spot rv" data-img="images/Parachute16.PNG"><h3>Data Analysis Intern</h3><p>Parachute 16</p><small>View certificate</small></div>
-    <div class="spot rv" data-img="images/BuildWithAI.PNG"><h3>Build with AI Hackathon</h3><p>National 8th Ranking</p><small>View certificate</small></div>
-    <div class="spot rv" data-img="images/TheHope.PNG"><h3>ASP.NET Core Advanced</h3><p>The Hope International Company</p><small>View certificate</small></div>
-    <div class="spot rv" data-img="images/Mafraq_Hackathon.png"><h3>Mafraq Hackathon</h3><p>AFAQ</p><small>View certificate</small></div>
-    <div class="spot rv" data-img="images/EndPoint.PNG"><h3>Endpoint Security</h3><p>Cisco</p><small>View certificate</small></div>
-    <div class="spot rv" data-img="images/Hammam Abdalhalim Al-Malabeh - Data Analysis_2225_page-0001.jpg"><h3>Digital Employability Program</h3><p>Youth Grow Activity (YGA) · Data Analysis</p><small>View certificate</small></div>
-  </div>
-</section>
-
-<section>
-  <div class="eyebrow rv">Expertise</div><h2 class="rv">What I can do for you.</h2>
-  <div class="skills">
-    <div class="rv"><h3>Languages</h3><div class="chips"><span class="chip mag">C#</span><span class="chip mag">Java</span><span class="chip mag">Dart</span><span class="chip mag">Python</span><span class="chip mag">SQL</span><span class="chip mag">JavaScript</span></div></div>
-    <div class="rv"><h3>Frameworks</h3><div class="chips"><span class="chip mag">ASP.NET Core</span><span class="chip mag">Entity Framework Core</span><span class="chip mag">Flutter</span><span class="chip mag">ASP.NET MVC</span></div></div>
-    <div class="rv"><h3>Databases</h3><div class="chips"><span class="chip mag">SQL Server</span><span class="chip mag">Firebase</span><span class="chip mag">MySQL</span><span class="chip mag">SQLite</span></div></div>
-    <div class="rv"><h3>Data &amp; Tools</h3><div class="chips"><span class="chip mag">Pandas</span><span class="chip mag">NumPy</span><span class="chip mag">Power BI</span><span class="chip mag">Git</span><span class="chip mag">REST APIs</span><span class="chip mag">Clean Architecture</span><span class="chip mag">Agile/Scrum</span><span class="chip mag">CI/CD</span><span class="chip mag">Figma</span></div></div>
-  </div>
-</section>
-
-<section class="work" id="work"><div class="hpin">
-  <div class="eyebrow">Featured projects</div><h2>Things I’ve built.</h2>
-  <div class="htrack">
-    <article class="panel"><div><div class="num">01</div><h3>RoadK – Infrastructure App</h3><p>A dual-role full-stack mobile app for citizens and municipal admins to report road issues in real time, with push notifications and a gamified leaderboard.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Dart</span><span class="chip">Firebase</span><span class="chip">Figma</span></div></div><div class="pic"><img src="images/IMG_5649.jpeg" alt="RoadK" onerror="this.parentNode.remove()"></div></article>
-    <article class="panel"><div><div class="num">02</div><h3>Eshara – AI Sign Language</h3><p>An AI-powered sign language translation system that reached 8th national ranking in the Build with AI Hackathon, later rebuilt with ASP.NET MVC.</p><div class="chips"><span class="chip">Python</span><span class="chip">AI</span><span class="chip">ASP.NET MVC</span></div></div><div class="pic"><img src="images/Eshara.png" alt="Eshara" onerror="this.parentNode.remove()"></div></article>
-    <article class="panel"><div><div class="num">03</div><h3>Vacation Workflow System</h3><p>A production-level system that automates multi-step leave approval, built with ASP.NET Core and Entity Framework Core on clean architecture.</p><div class="chips"><span class="chip">ASP.NET Core</span><span class="chip">EF Core</span><span class="chip">SQL Server</span></div></div><div class="pic"><img src="images/vacation_project.jpg" alt="Vacation system" onerror="this.parentNode.remove()"></div></article>
-  </div>
-</div></section>
-
-<section class="contact" id="contact">
-  <div class="eyebrow rv">Contact</div>
-  <h2 class="shine">Let’s work together</h2>
-  <p class="rv" style="color:var(--muted)">Available for full-time opportunities and relevant projects.</p>
-  <a class="mail mag" href="mailto:hmalabeh14@gmail.com">hmalabeh14@gmail.com</a>
-  <div class="links"><a href="https://linkedin.com/in/iamhammam" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/Imhammam" target="_blank" rel="noopener">GitHub</a><a href="docs/Hammam%20Al-MalabehCV.pdf" target="_blank">Resume</a></div>
-</section>
-<footer>Hammam Malabeh © 2026 · Amman, Jordan</footer>
-<div class="lb"><img alt=""></div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
-<script>
-(() => {
-  const $ = (s, r = document) => [...r.querySelectorAll(s)];
-  const rm = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const fine = matchMedia('(hover: hover) and (pointer: fine)').matches;
-
-  /* loading screen: waits for the page, shows at least ~1 second */
-  const loader = $('.loader')[0], bar = $('.lbar i')[0], t0 = performance.now();
-  let pct = 0, over = false;
-  const tick = setInterval(() => { pct += (90 - pct) * .08; bar.style.width = pct + '%'; }, 60);
-  const ready = new Promise(res => {
-    const fin = () => {
-      if (over) return; over = true;
-      clearInterval(tick); bar.style.width = '100%';
-      setTimeout(() => {
-        loader.classList.add('done');
-        document.documentElement.classList.remove('loading');
-        setTimeout(res, 200);
-      }, Math.max(0, 1000 - (performance.now() - t0)) + 250);
-    };
-    if (document.readyState === 'complete') fin(); else addEventListener('load', fin);
-    setTimeout(fin, 6000);
-  });
-
-  // lightbox works even without animation libraries
-  const lb = $('.lb')[0], lbImg = lb.querySelector('img');
-  $('.spot').forEach(c => c.addEventListener('click', () => { lbImg.src = c.dataset.img; lb.classList.add('on'); }));
-  lb.addEventListener('click', () => lb.classList.remove('on'));
-  addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('on'); });
-  $('.spot').forEach(c => c.addEventListener('pointermove', e => {
-    const r = c.getBoundingClientRect();
-    c.style.setProperty('--x', e.clientX - r.left + 'px'); c.style.setProperty('--y', e.clientY - r.top + 'px');
-  }));
-
-  if (rm || !window.gsap || !window.Lenis) return;   // content stays fully visible
-  gsap.registerPlugin(ScrollTrigger);
-
-  /* Lenis smooth scroll, driven by GSAP's ticker */
-  const lenis = new Lenis({ duration: 1.15 });
-  lenis.on('scroll', ScrollTrigger.update);
-  gsap.ticker.add(t => lenis.raf(t * 1000));
-  gsap.ticker.lagSmoothing(0);
-  $('a[href^="#"]').forEach(a => a.addEventListener('click', e => {
-    const t = $(a.getAttribute('href'))[0];
-    if (t) { e.preventDefault(); lenis.scrollTo(t); }
-  }));
-
-  /* split text into spans (React Bits SplitText style) */
-  const split = (el, words) => {
-    const txt = el.textContent.trim(); el.textContent = '';
-    return (words ? txt.split(' ') : [...txt]).map((p, i, a) => {
-      const s = document.createElement('span');
-      s.className = words ? 'w' : 'ch';
-      s.textContent = words ? p + (i < a.length - 1 ? ' ' : '') : p;
-      el.appendChild(s); return s;
-    });
-  };
-
-  /* hero intro */
-  gsap.set('.me', { xPercent: -50 });
-  const chars = $('.name .line').flatMap(l => split(l, false));
-  const intro = gsap.timeline({ paused: true, defaults: { ease: 'power4.out' } })
-    .from(chars, { yPercent: 120, duration: 1.2, stagger: .045 })
-    .from('.me', { y: 90, opacity: 0, filter: 'blur(16px)', duration: 1.5 }, .25)
-    .from('.nav > *, .hud > *', { opacity: 0, y: -14, duration: .8, stagger: .08 }, .9);
-  ready.then(() => intro.play());
-
-  const hero = { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true };
-  gsap.to('.nw', { yPercent: -22, scale: 1.12, ease: 'none', scrollTrigger: hero });
-  gsap.to('.mw', { yPercent: 8, ease: 'none', scrollTrigger: hero });
-
-  if (fine) {   // mouse parallax: name and photo move in opposite directions
-    const q = (s, p, d) => gsap.quickTo(s, p, { duration: d, ease: 'power3' });
-    const nx = q('.name', 'x', .9), ny = q('.name', 'y', .9), mx = q('.me', 'x', 1.1), my = q('.me', 'y', 1.1);
-    addEventListener('pointermove', e => {
-      const px = e.clientX / innerWidth - .5, py = e.clientY / innerHeight - .5;
-      nx(px * -50); ny(py * -28); mx(px * 20); my(py * 12);
-    });
-  }
-
-  /* marquee that speeds up with scroll velocity (React Bits ScrollVelocity style) */
-  const rows = $('.row'); let vel = 0;
-  rows.forEach((r, i) => { r.innerHTML += r.innerHTML; r._x = 0; r._d = i % 2 ? 1 : -1; });
-  lenis.on('scroll', e => { vel = e.velocity; });
-  gsap.ticker.add(() => {
-    rows.forEach(r => {
-      const half = r.scrollWidth / 2;
-      r._x += r._d * (.7 + Math.min(Math.abs(vel), 30) * .4);
-      if (r._x <= -half) r._x += half;
-      if (r._x > 0) r._x -= half;
-      r.style.transform = 'translate3d(' + r._x + 'px,0,0)';
-    });
-    vel *= .92;
-  });
-
-  /* words light up as you scroll (React Bits ScrollReveal style) */
-  gsap.fromTo(split($('.about p')[0], true), { opacity: .12 },
-    { opacity: 1, stagger: .1, ease: 'none', scrollTrigger: { trigger: '.about p', start: 'top 80%', end: 'bottom 45%', scrub: true } });
-
-  /* blur-in reveals */
-  gsap.set('.rv', { opacity: 0, y: 40, filter: 'blur(8px)' });
-  ScrollTrigger.batch('.rv', { start: 'top 92%', once: true,
-    onEnter: b => gsap.to(b, { opacity: 1, y: 0, filter: 'blur(0px)', duration: .9, stagger: .08, ease: 'power3.out', overwrite: true }) });
-
-  /* count up */
-  $('[data-count]').forEach(el => {
-    const to = +el.dataset.count, suf = el.dataset.suf || '', o = { v: 0 };
-    ScrollTrigger.create({ trigger: el, start: 'top 90%', once: true,
-      onEnter: () => gsap.to(o, { v: to, duration: 1.6, ease: 'power2.out', onUpdate: () => { el.textContent = Math.round(o.v) + suf; } }) });
-  });
-
-  /* magnetic chips and button */
-  if (fine) $('.mag').forEach(el => {
-    const qx = gsap.quickTo(el, 'x', { duration: .5, ease: 'power3' }), qy = gsap.quickTo(el, 'y', { duration: .5, ease: 'power3' });
-    el.addEventListener('pointermove', e => {
-      const r = el.getBoundingClientRect();
-      qx((e.clientX - r.left - r.width / 2) * .35); qy((e.clientY - r.top - r.height / 2) * .35);
-    });
-    el.addEventListener('pointerleave', () => { qx(0); qy(0); });
-  });
-
-  /* projects scroll sideways while the section is pinned (desktop) */
-  gsap.matchMedia().add('(min-width: 900px)', () => {
-    const t = $('.htrack')[0];
-    gsap.to(t, { x: () => -(t.scrollWidth - innerWidth), ease: 'none',
-      scrollTrigger: { trigger: '.hpin', start: 'top top', end: () => '+=' + (t.scrollWidth - innerWidth), pin: true, scrub: 1, invalidateOnRefresh: true } });
-  });
-  addEventListener('load', () => ScrollTrigger.refresh());
-})();
-</script>
+</div>
 </body>
 </html>
